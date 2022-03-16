@@ -2,6 +2,9 @@
 - Helpers
 */
 
+/**
+  * Hide element while making it readable for screen readers
+  */
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
