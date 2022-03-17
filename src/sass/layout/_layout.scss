@@ -1,10 +1,7 @@
-/* 
-- Layout
-*/
+@use '../abstracts/variables' as *;
 
-// .main {
-//   max-width: 1320px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   padding: 0 2rem;
-// }
+@each $color, $value in $background-colors {
+    .bg-#{$color} { // all bg classes will be styled
+            background-color: $value;
+    }
+}
