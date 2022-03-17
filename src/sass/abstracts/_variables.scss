@@ -9,6 +9,15 @@ $white: hsl(0, 0%, 100%);
 $light-gray: hsl(0, 0%, 81%);
 $light-gray-blue: hsl(210, 46%, 95%);
 
+$background-colors: (
+    "body-bg": $light-gray-blue,
+    "daniel-bg": $violet,
+    "jonathan-bg": $gray-blue,
+    "jeanette-bg": $white,
+    "patrick-bg": $black-blue,
+    "kira-bg": $light-gray
+);
+
 /**
  * Note for text colors:
  * 1. "Verified Graduate" has the same color as the person's name with 50% opacity
