@@ -8,5 +8,6 @@
 @use 'base/typography';
 
 // 3. Layout-related sections
+@use 'layout/flex';
 @use 'layout/grid';
 @use 'layout/layout';
