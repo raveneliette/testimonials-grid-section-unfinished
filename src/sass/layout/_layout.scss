@@ -1,5 +1,6 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
+@use '../abstracts/functions' as *;
 
 @each $color, $value in $background-colors {
     .bg-#{$color} { // all bg classes will be styled
@@ -16,5 +17,16 @@ body {
 
     &__avatar-img {
         border-radius: 50%;
+    }
+
+    & > :nth-of-type(1),
+    & > :nth-of-type(2),
+    & > :nth-of-type(4) {
+        color: text-color(light);
+    }
+
+    & > :nth-of-type(3),
+    & > :nth-of-type(5) {
+        color: text-color(dark);
     }
 }
