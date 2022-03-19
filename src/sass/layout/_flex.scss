@@ -1,3 +1,9 @@
 .flex {
     display: flex;
 }
+
+.main__name-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
