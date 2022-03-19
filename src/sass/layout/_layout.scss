@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 @each $color, $value in $background-colors {
     .bg-#{$color} { // all bg classes will be styled
@@ -7,9 +8,7 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
 }
 
 .main {
