@@ -29,4 +29,12 @@ body {
     & > :nth-of-type(5) {
         color: text-color(dark);
     }
+
+    & > div .verified-p {
+        opacity: 50%;
+    }
+
+    & > div .comments {
+        opacity: 70%;
+    }
 }
