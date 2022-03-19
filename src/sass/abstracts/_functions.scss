@@ -1,0 +1,6 @@
+@use './variables' as *;
+
+// Text Color
+@function text-color($color) {
+    @return map-get($text-colors, $color)
+}
