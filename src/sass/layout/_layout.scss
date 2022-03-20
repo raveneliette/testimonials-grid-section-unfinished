@@ -50,7 +50,9 @@ body {
         padding-bottom: 2.4rem;
     }
 
-    & > :nth-of-type(1) {
+    & > :nth-of-type(1),
+    & > :nth-of-type(5) {
+        padding-right: 2.1rem !important;
         position: relative;
     }
 
