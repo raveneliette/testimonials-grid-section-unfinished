@@ -1,4 +1,4 @@
-@use '../abstracts/variables' as *;
+@use './variables' as *;
 
 @mixin flexCenter {
     display: flex;
@@ -32,6 +32,12 @@
 
 @mixin xl {
     @media (min-width: map-get($breakpoints, "xl")) {
+        @content;
+    }
+}
+
+@mixin breakpoint($bp: 0) {
+    @media (min-width: $bp) {
         @content;
     }
 }
