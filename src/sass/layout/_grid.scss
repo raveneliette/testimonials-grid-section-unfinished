@@ -1,7 +1,7 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1.8rem 2.2rem;
+    gap: 1.7rem 2.2rem;
 
     & div:nth-of-type(1) {
         grid-column: 1 / 3;
