@@ -26,6 +26,20 @@ body {
 
     &__span-p {
         margin-top: 1.2rem;
+        position: relative;
+        z-index: 2;
+    }
+
+    & > :nth-of-type(1) {
+        position: relative;
+    }
+
+    &__bg-pattern-div {
+        position: absolute;
+        top: 0;
+        right: 83px;
+        width: 100px;
+        z-index: 1;
     }
 
     & > :nth-of-type(1),
