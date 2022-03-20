@@ -20,7 +20,7 @@
 
 @mixin md {
     @media (min-width: map-get($breakpoints, "md")) {
-        @contenxl
+        @content;
     }
 }
 
