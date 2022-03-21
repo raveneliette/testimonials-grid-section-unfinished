@@ -1,0 +1,41 @@
+@use '../abstracts/mixins' as *;
+@use '../layout/layout' as *; // Add this import file so the media queries abosolute positioning will work
+
+@include media-lg {
+    .grid {
+        grid-template-columns: 1fr;
+
+        & div:nth-of-type(1) {
+            grid-column: 1 / 1;
+        }
+    
+        & div:nth-of-type(4) {
+            grid-column: 1 / 1;
+        }
+    
+        & div:nth-of-type(5) {
+            grid-column: 1 / 1;
+            grid-row: 5 / 6;
+        }
+    }
+
+    .main {
+        margin: 5rem 0;
+        width: 80%;
+    }
+}
+
+@include media-sm {
+    .main {
+        margin: 5rem 0;
+        width: 82.2%;
+
+        &__comments {
+            margin-right: 0.41rem;
+        }
+
+        &__bg-pattern-div {
+            right: 19px;
+        }
+    }
+}
