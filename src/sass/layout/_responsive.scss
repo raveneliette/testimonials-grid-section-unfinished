@@ -1,5 +1,5 @@
 @use '../abstracts/mixins' as *;
-@use '../layout/layout' as *; // Add this import file so the media queries abosolute positioning will work
+@use '../layout/layout' as *; // Add this import file so the bg-pattern-div abosolute positioning will work
 
 @include media-lg {
     .grid {
