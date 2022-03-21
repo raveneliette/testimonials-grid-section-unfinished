@@ -4,7 +4,7 @@
 
 @each $color, $value in $background-colors {
     .bg-#{$color} { // all bg classes will be styled
-            background-color: $value;
+        background-color: $value;
     }
 }
 
@@ -32,6 +32,10 @@ body {
 
     &__comments {
         opacity: 70%;
+    }
+
+    & > div .verified-p {
+        opacity: 50%;
     }
 
     & > :nth-of-type(1) &__comments,
@@ -73,9 +77,5 @@ body {
     & > :nth-of-type(3),
     & > :nth-of-type(5) {
         color: text-color(dark);
-    }
-
-    & > div .verified-p {
-        opacity: 50%;
     }
 }
